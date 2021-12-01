@@ -75,6 +75,14 @@ a.btn:hover {
     color: var(--light-hover);
 }
 
+a.btn-link {
+    color: #3490dc;
+}
+
+a.btn-link:hover {
+    color: #1d68a7;
+}
+
 a.btn.ss-component.btn-default {
     background: var(--main);
     border-color: var(--border);
