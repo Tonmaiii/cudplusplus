@@ -1,0 +1,273 @@
+:root {
+    --main: #202024;
+    --main-hover: #28282b;
+    --main-hover-active: #2c2c30;
+    --light: #fff;
+    --light-hover: #ddd;
+    --transparent-light: rgba(255, 255, 255, 0.02);
+    --border: rgba(255, 255, 255, 0.125);
+}
+
+a.ss-color-0,
+div.ss-color-0,
+button.ss-color-0 {
+    background: var(--main);
+    color: var(--light);
+}
+
+button.border {
+    border: 1px solid var(--border) !important;
+}
+
+.ss-text-color-1 {
+    color: #f06991;
+}
+
+div.ss-color-1.ss-light {
+    background: #47212d;
+    color: var(--light);
+}
+
+div.card,
+form.card {
+    background-color: var(--main);
+    border: 1px solid var(--border);
+}
+
+div.card-header {
+    background-color: var(--transparent-light);
+    border-bottom: 1px solid var(--border);
+}
+
+button.page-link {
+    background-color: var(--main);
+}
+
+button.page-link:hover {
+    background-color: var(--main-hover);
+}
+
+a.ss-gridmenu-item:hover {
+    background: var(--main-hover);
+}
+
+li.list-group-item {
+    background-color: var(--main);
+    border: 1px solid var(--border);
+}
+
+a.text-dark {
+    color: var(--light) !important;
+}
+
+a.text-dark.p-2:hover,
+a.text-dark.p-2:focus {
+    color: var(--light-hover) !important;
+}
+
+a.btn,
+button.btn {
+    color: var(--light);
+}
+
+button.btn:hover,
+a.btn:hover {
+    color: var(--light-hover);
+}
+
+a.btn.ss-component.btn-default {
+    background: var(--main);
+    border-color: var(--border);
+    color: var(--light-hover);
+}
+
+a.btn.ss-component.btn-default:hover {
+    background: var(--main-hover);
+}
+
+div.ss-component-datemonthtime {
+    border: 1px solid var(--border);
+}
+
+label.btn-light {
+    color: var(--light);
+    background-color: var(--main);
+}
+
+label.btn-light:hover {
+    color: var(--light);
+    background-color: var(--main-hover);
+}
+
+label.btn-light:not(:disabled):not(.disabled):active,
+label.btn-light:not(:disabled):not(.disabled).active,
+.show > .btn-light.dropdown-toggle {
+    color: var(--light);
+    background-color: var(--main-hover-active);
+}
+
+button.btn.ss-component.btn-default {
+    color: var(--light);
+    background: var(--main);
+    border-color: var(--border);
+}
+
+button.btn.ss-component.btn-default:hover {
+    color: var(--light);
+    background: var(--main-hover);
+    border-color: var(--border);
+}
+
+span.page-link,
+input.page-link {
+    background-color: var(--main);
+}
+
+span.page-link:hover,
+input.page-link:hover {
+    background-color: var(--main-hover);
+}
+
+ul.nav.nav-tabs.ss-component .ss-color-1.nav-link {
+    color: var(--light);
+}
+
+select.custom-select:disabled {
+    color: #6c757d;
+    background-color: #2a2a2e;
+}
+
+div#ss-onair-dialog {
+    background: var(--main);
+}
+
+a.ss-color-0.ss-read {
+    background-color: #26262b;
+    color: #bbb;
+}
+
+a.ss-color-0.ss-unread {
+    background-color: var(--main);
+    color: var(--light);
+}
+
+div.modal-content {
+    background-color: var(--main);
+    border: 1px solid var(--border);
+}
+
+body.modal-open {
+    color: var(--light);
+}
+
+button.close {
+    text-shadow: 0 1px 0 var(--main);
+}
+
+button.close:hover {
+    color: var(--light);
+}
+
+div.dropdown-menu {
+    color: var(--light);
+    background-color: var(--main);
+    border: 1px solid var(--border);
+}
+
+a.dropdown-item {
+    color: var(--light);
+}
+
+input.rw-input,
+input.rw-dropdown-list-autofill,
+input.rw-filter-input {
+    color: var(--light);
+    background-color: var(--main);
+}
+
+button.rw-btn {
+    color: var(--light);
+}
+
+span.rw-select-bordered {
+    border-left: var(--border) 1px solid;
+}
+
+div.rw-widget-container {
+    background-color: var(--main);
+    border: var(--border) 1px solid;
+}
+
+div.rw-widget-container.rw-state-focus,
+div.rw-state-focus > .rw-widget-container,
+div.rw-widget-container.rw-state-focus:hover,
+div.rw-state-focus > .rw-widget-container:hover {
+    background-color: var(--main);
+}
+
+table.table {
+    color: var(--light);
+}
+
+div.bg-light {
+    background-color: var(--main) !important;
+}
+
+select.form-control {
+    color: var(--light);
+    background-color: var(--main);
+    border: 1px solid var(--border);
+}
+
+select.form-control:focus {
+    color: var(--light);
+    background-color: var(--main);
+}
+
+a.ss-color-0.ss-noti.ss-unread {
+    background-color: var(--main);
+    color: var(--light);
+}
+
+a.ss-color-0.ss-noti.ss-read {
+    background-color: #26262b;
+    color: #bbb;
+}
+
+div.list-group-item {
+    background-color: var(--main);
+    border: 1px solid var(--border);
+}
+
+button.btn-lg.btn-block.media-body.ss-textalign-center.border-0 {
+    background-color: #26262b;
+    border-color: var(--border);
+}
+
+i.fas.fa-chevron-down {
+    color: var(--light);
+}
+
+input.form-control {
+    color: var(--light);
+    background-color: var(--main);
+    border-color: var(--border);
+}
+
+div.ck.ck-editor__main > .ck-editor__editable {
+    background: var(--main);
+}
+
+div.ck.ck-editor__main > .ck-editor__editable:not(.ck-focused) {
+    border-color: var(--border);
+}
+
+div.ck.ck-toolbar {
+    background: var(--main);
+    border: 1px solid var(--border);
+}
+
+div.ck.ck-reset_all,
+div.ck.ck-reset_all * {
+    color: var(--light);
+}
