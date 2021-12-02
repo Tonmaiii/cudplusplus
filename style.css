@@ -292,3 +292,7 @@ i.fas.fa-paper-plane {
 div.input-group-text {
     color: var(--light);
 }
+
+img.ss-profile-img {
+    background: var(--main);
+}
