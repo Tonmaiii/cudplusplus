@@ -4,7 +4,7 @@
     --main-hover-active: #2c2c30;
     --light: #fff;
     --light-hover: #ddd;
-    --transparent-light: rgba(255, 255, 255, 0.02);
+    --transparent-light: rgba(255, 255, 255, 0.05);
     --border: rgba(255, 255, 255, 0.125);
 }
 
@@ -26,6 +26,10 @@ button.border {
 div.ss-color-1.ss-light {
     background: #47212d;
     color: var(--light);
+}
+
+div#ss-app-header[data-transparent='true'] {
+    background: var(--transparent-light);
 }
 
 div.card,
