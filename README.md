@@ -17,4 +17,4 @@ Check if you have the latest version in the extensions page. If you do not, remo
 
 ## Version
 
-1.0.3
+1.0.4
