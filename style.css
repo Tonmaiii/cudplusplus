@@ -225,13 +225,15 @@ div.bg-light {
     background-color: var(--main) !important;
 }
 
-select.form-control {
+select.form-control,
+input.form-control {
     color: var(--light);
     background-color: var(--main);
-    border: 1px solid var(--border);
+    border-color: var(--border);
 }
 
-select.form-control:focus {
+select.form-control:focus,
+input.form-control:focus {
     color: var(--light);
     background-color: var(--main);
 }
@@ -260,12 +262,6 @@ i.fas.fa-chevron-down {
     color: var(--light);
 }
 
-input.form-control {
-    color: var(--light);
-    background-color: var(--main);
-    border-color: var(--border);
-}
-
 div.ck.ck-editor__main > .ck-editor__editable {
     background: var(--main);
 }
@@ -281,5 +277,18 @@ div.ck.ck-toolbar {
 
 div.ck.ck-reset_all,
 div.ck.ck-reset_all * {
+    color: var(--light);
+}
+
+div.ss-color-gray.ss-light {
+    color: var(--light);
+    background-color: #2b2b30;
+}
+
+i.fas.fa-paper-plane {
+    color: var(--light);
+}
+
+div.input-group-text {
     color: var(--light);
 }
