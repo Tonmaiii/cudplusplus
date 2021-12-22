@@ -296,3 +296,8 @@ div.input-group-text {
 img.ss-profile-img {
     background: var(--main);
 }
+
+.ss-component[type='radio']:checked + label,
+.ss-component[type='radio']:not(:checked) + label {
+    color: #ddd !important;
+}
