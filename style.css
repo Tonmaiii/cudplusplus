@@ -1,7 +1,8 @@
 :root {
     --main: #202024;
     --main-hover: #28282b;
-    --main-hover-active: #2c2c30;
+    --main-disabled: #323236;
+    --main-hover-active: #303035;
     --light: #fff;
     --light-hover: #ddd;
     --transparent-light: rgba(255, 255, 255, 0.05);
@@ -236,6 +237,11 @@ select.form-control:focus,
 input.form-control:focus {
     color: var(--light);
     background-color: var(--main);
+}
+
+select.form-control:disabled,
+input.form-control:disabled {
+    background-color: var(--main-disabled);
 }
 
 a.ss-color-0.ss-noti.ss-unread {

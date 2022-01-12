@@ -49,16 +49,16 @@ const rgbaExpand = rgba =>
         .map(n => (n === undefined ? 1 : parseFloat(n)))
 
 const hexExpand = hex => {
-    const values = hex
+    const a = hex
         .match(
             /^#(?:(?:([0-9a-f])([0-9a-f])([0-9a-f])([0-9a-f])?)|(?:([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})(?:([0-9a-f]){2})?))$/i
         )
         .slice(1)
         .filter(n => n !== undefined)
-    values[3] === undefined && (values[3] = 'ff')
-    values.map(n => parseInt(n, 16))
-    values[3] /= 0xff
-    return values
+    a[3] === undefined && (a[3] = 'ff')
+    const b = a.map(n => parseInt(n, 16))
+    b[3] /= 0xff
+    return b
 }
 
 const defaultImageURL =
