@@ -4,7 +4,10 @@ setInterval(() => {
             element.src === defaultImageURL &&
             (element.src = chrome.runtime.getURL('cud_plus_logo_dark.svg'))
 
-        element.style.color === 'windowtext' && (element.style.color = 'white')
+        if (element.style.color === 'windowtext' && !element.inverted) {
+            element.style.color = 'white'
+            element.inverted = true
+        }
 
         if (element.tagName === 'SPAN' && !element.inverted) {
             element.style.color &&
