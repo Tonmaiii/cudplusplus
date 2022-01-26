@@ -2,12 +2,16 @@
     "manifest_version": 3,
     "name": "CUD++",
     "description": "Adds dark theme to cudplus",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "content_scripts": [
         {
             "matches": ["https://cudplus.onsmart.school/*"],
             "js": ["colors.js", "replace_elements.js"],
             "css": ["style.css"]
+        },
+        {
+            "matches": ["https://cudplus.onsmart.school/home"],
+            "js": ["store_default_image.js"]
         }
     ],
     "web_accessible_resources": [
@@ -16,5 +20,6 @@
             "matches": ["https://cudplus.onsmart.school/*"]
         }
     ],
+    "permissions": ["storage"],
     "icons": { "128": "cud++.png" }
 }

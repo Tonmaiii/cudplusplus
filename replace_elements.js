@@ -1,5 +1,5 @@
 setInterval(() => {
-    Array.from(document.getElementsByTagName('*')).forEach(element => {
+    Array.from(document.getElementsByTagName('*')).forEach(async element => {
         element.tagName === 'IMG' &&
             element.src === defaultImageURL &&
             (element.src = chrome.runtime.getURL('cud_plus_logo_dark.svg'))
@@ -61,5 +61,8 @@ const hexExpand = hex => {
     return b
 }
 
-const defaultImageURL =
-    'https://oss-cudplus-own.s3.ap-southeast-1.amazonaws.com/FQsvhVlPNMbq8tdgCs0m_3_2020_05_03_033743/cud_plus_logo.svg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5OEOOMBR3OZRLCT6%2F20220105%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Date=20220105T235240Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600000&X-Amz-Signature=c6faf6bba5d5eae1cc062852b2d03248d9eb5a91c93c1be6bc2e27d1a6915116'
+let defaultImageURL
+chrome.storage.local.get(
+    ['defaultImageURL'],
+    data => (defaultImageURL = data.defaultImageURL)
+)
