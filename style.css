@@ -154,12 +154,14 @@ div#ss-onair-dialog {
     background: var(--main);
 }
 
-a.ss-color-0.ss-read {
+a.ss-color-0.ss-read,
+i.ss-color-0.ss-read {
     background-color: #26262b;
     color: #bbb;
 }
 
-a.ss-color-0.ss-unread {
+a.ss-color-0.ss-unread,
+i.ss-color-0.ss-unread {
     background-color: var(--main);
     color: var(--light);
 }
