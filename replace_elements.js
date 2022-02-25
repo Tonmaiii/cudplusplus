@@ -26,6 +26,7 @@ const invert = element => {
 }
 
 const invertColor = inputColor => {
+    if (inputColor === 'transparent') return 'transparent'
     const color = getColor(inputColor)
     color[0] = map(color[0], 0x0, 0xff, 0xff, 0x20)
     color[1] = map(color[1], 0x0, 0xff, 0xff, 0x20)
