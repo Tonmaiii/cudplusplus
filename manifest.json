@@ -6,20 +6,27 @@
     "content_scripts": [
         {
             "matches": ["https://cudplus.onsmart.school/*"],
-            "js": ["colors.js", "replace_elements.js"],
-            "css": ["style.css"]
+            "js": ["src/replace_elements.js", "src/insert.js"],
+            "css": ["assets/style.css"]
         },
         {
             "matches": ["https://cudplus.onsmart.school/home"],
-            "js": ["store_default_image.js"]
+            "js": ["src/store_default_image.js"]
         }
     ],
     "web_accessible_resources": [
         {
-            "resources": ["cud_plus_logo_dark.svg"],
+            "resources": [
+                "assets/cud_plus_logo_dark.svg",
+                "assets/colors.json",
+                "src/networkMonitor.js",
+                "src/requestHandler.js",
+                "src/makeHomeworkTable.js"
+            ],
             "matches": ["https://cudplus.onsmart.school/*"]
         }
     ],
+    "host_permissions": ["https://cudplus.onsmart.school/*"],
     "permissions": ["storage"],
-    "icons": { "128": "cud++.png" }
+    "icons": { "128": "assets/cud++.png" }
 }
