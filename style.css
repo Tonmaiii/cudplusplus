@@ -309,3 +309,7 @@ img.ss-profile-img {
 .ss-component[type='radio']:not(:checked) + label {
     color: #ddd !important;
 }
+
+button.dropdown-item {
+    color: #fff;
+}
